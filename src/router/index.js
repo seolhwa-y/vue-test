@@ -78,7 +78,7 @@ const routes = [
 // 라우터 생성
 const router = createRouter({
   history: createWebHistory(), // 해시 모드 대신 히스토리 모드 사용
-  base: process.env.BASE_URL,
+  base: "",
   routes,
   methods: { checkAuthed },
 });
