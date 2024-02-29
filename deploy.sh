@@ -10,7 +10,7 @@
  cd docs
 
 # if you are deploying to a custom domain
-#echo 'shy-cherish.com' > CNAME
+echo 'https://seolhwa-y.github.io/vue-test/' > CNAME
 
 git init
 git add -A
