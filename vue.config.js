@@ -1,14 +1,14 @@
 module.exports = {
-    // devServer: {
-    //     proxy: {
-    //         '/': {
-    //             target: "http://LOCALHOST",
-    //             pathRewrite: { '^/': '' },
-    //             changeOrigin: true,
-    //             secure: false,
-    //         },
-    //     },
-    // },
+    devServer: {
+        proxy: {
+            '/': {
+                target: "http://LOCALHOST",
+                pathRewrite: { '^/': '' },
+                changeOrigin: true,
+                secure: false,
+            },
+        },
+    },
     publicPath: process.env.NODE_ENV === 'production' ? '/vue-test/' : '/',
 };
 
