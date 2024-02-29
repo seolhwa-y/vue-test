@@ -60,7 +60,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/",
+    path: process.env.BASE_URL,
     name: "login",
     component: Login,
     beforeEnter: (to, from, next) => {
