@@ -7,10 +7,10 @@
  npm run build
 
 # navigate into the build output directory
- cd dist
+ cd docs
 
 # if you are deploying to a custom domain
- echo 'shy-cherish.com' > CNAME
+#echo 'shy-cherish.com' > CNAME
 
 git init
 git add -A
