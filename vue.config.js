@@ -9,7 +9,8 @@ module.exports = {
             },
         },
     },
-    publicPath: process.env.NODE_ENV === 'production' ? '/vue-test/' : '/',
+    publicPath: '/vue-test/',
+outputDir: "docs",
 };
 
 // 요청하는 URL을 부를 때 localhost가 server와 통신할 때 에러가 나기 때문에
