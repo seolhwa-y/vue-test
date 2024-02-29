@@ -1,7 +1,7 @@
 import Home from "../views/Dashboard.vue";
 import Login from "../views/user/Login.vue";
 import store from "../store/index.js";
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const checkAuthed = function (to, from, next) {
   console.log(from);
@@ -77,7 +77,7 @@ const routes = [
 
 // 라우터 생성
 const router = createRouter({
-  history: createWebHashHistory(process.env.BASE_URL), // 해시 모드 대신 히스토리 모드 사용
+  history: createWebHistory(process.env.BASE_URL), // 해시 모드 대신 히스토리 모드 사용
   base: process.env.BASE_URL,
   routes,
   methods: { checkAuthed },
