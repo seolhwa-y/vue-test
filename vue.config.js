@@ -1,14 +1,14 @@
 module.exports = {
-    devServer: {
-        proxy: {
-            '/': {
-                target: 'http://LOCALHOST',
-                pathRewrite: { '^/': '' },
-                changeOrigin: true,
-                secure: false,
-            },
-        },
-    },
+    // devServer: {
+    //     proxy: {
+    //         '/': {
+    //             target: 'http://LOCALHOST',
+    //             pathRewrite: { '^/': '' },
+    //             changeOrigin: true,
+    //             secure: false,
+    //         },
+    //     },
+    // },
     publicPath: '/vue-test/',
     outputDir: 'docs',
     configureWebpack: (config) => {
